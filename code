@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>馬爾地夫旅宿登記網</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .section-title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .portfolio img {
+      width: 100%;
+      height: auto;
+    }
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="container">
+      <h1>馬爾地夫旅宿登記網</h1>
+      <p class="lead">探索天堂島嶼，預訂你的夢幻民宿</p>
+      <a href="#register" class="btn btn-primary">立即登記民宿</a>
+      <a href="#accommodations" class="btn btn-light ms-2">搜尋住宿</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">關於我們</h2>
+      <p>我們致力於打造一個連結旅客與民宿業者的平台，讓您輕鬆在馬爾地夫找到理想住宿，同時探索當地迷人的自然與文化。</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">我們提供的服務</h2>
+      <div class="row text-center">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-icon"><i class="fas fa-search-location"></i></div>
+          <h5>住宿搜尋</h5>
+          <p>快速找到符合需求的民宿。</p>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-icon"><i class="fas fa-home"></i></div>
+          <h5>房東登記</h5>
+          <p>房東可輕鬆上架自家民宿。</p>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h5>旅遊資訊</h5>
+          <p>推薦當地美景與必玩活動。</p>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-icon"><i class="fas fa-utensils"></i></div>
+          <h5>在地美食</h5>
+          <p>探索道地馬爾地夫風味料理。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">馬爾地夫精選圖集</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://www.clara7.com.tw/wp-content/uploads/2024/03/%E9%A6%AC%E7%88%BE%E5%9C%B0%E5%A4%AB%E9%89%91%E7%88%BE%E6%9B%BC-Pullman_%E5%85%8B%E6%8B%89%E6%8B%89%E6%97%85%E9%81%8A.webp" alt="海上屋" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://www.artisan.com.tw/images/blogs/20221117122929.jpg" alt="潛水" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://s3.ap-northeast-1.wasabisys.com/playplaymaldives/wp-content/uploads/%E9%A6%AC%E7%88%BE%E5%9C%B0%E5%A4%AB%E9%A6%AC%E5%88%97%E7%BE%8E%E9%A3%9F29-600x450.jpg" alt="馬爾地夫美食" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register" class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">登記你的民宿</h2>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">民宿名稱</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">地址</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">聯絡電話</label>
+          <input type="tel" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">簡介</label>
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">提交登記</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">聯絡我們</h2>
+      <p>有任何問題？歡迎聯絡我們，我們將盡快回覆您。</p>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">姓名</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">訊息</label>
+          <textarea class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">送出</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-3 bg-dark text-light">
+    <p class="mb-0">&copy; 2025 馬爾地夫旅宿登記網. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> <!-- AOS JS -->
+  <script>
+    AOS.init({
+      duration: 1000, // 動畫持續時間(ms)
+      once: true      // 只執行一次
+    });
+  </script>
+</body>
+</html>
